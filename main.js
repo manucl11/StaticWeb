@@ -1,5 +1,5 @@
 
-var participants = [];
+var participants = ["guapa", "buena gente", "a veces un poco tona", "esta buena", "graciosa"];
 
 const showParticipants = (data) => {
     let arrayAuxiliar = [];
@@ -21,7 +21,7 @@ const getWinner = (data) => {
 $(document).ready(function(){
 
     //jsonplaceholder.typicode.com/users
-
+    /*
     $.ajax({
 
         type: "GET",
@@ -36,7 +36,7 @@ $(document).ready(function(){
             console.log(error);
             alert(error);
         }
-    });
+    });*/
 
     $(".btn").click(function(){
 
