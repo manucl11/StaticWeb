@@ -3,12 +3,12 @@ var participants = ["guapa", "buena gente", "a veces un poco tona", "esta buena"
 
 const showParticipants = (data) => {
     let arrayAuxiliar = [];
-    data.forEach(element => {
+    /*data.forEach(element => {
         arrayAuxiliar.push(element.name);
-    });
+    });*/
 
     //$("#users").text("Participants: " + arrayAuxiliar);
-    $("#users").html("<strong>Participants: </strong>" + arrayAuxiliar);
+    $("#users").html("<strong>Participants: </strong>" + participants);
 }
 
 const getWinner = (data) => {
