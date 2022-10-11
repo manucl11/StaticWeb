@@ -1,5 +1,5 @@
 
-var participants = ["guapa", "buena gente", "a veces un poco tonta", "esta buena", "graciosa"];
+var participants = [];
 
 const showParticipants = (data) => {
     let arrayAuxiliar = [];
@@ -15,13 +15,13 @@ const getWinner = (data) => {
 
     const aleat = Math.floor(Math.random() * data.length);
 
-    $("#selected").html("<strong>Seleccionado: </strong>" + data[aleat]);
+    $("#selected").html("<strong>Seleccionado: </strong>" + data[aleat].name);
 }
 
 $(document).ready(function(){
 
     //jsonplaceholder.typicode.com/users
-    /*
+
     $.ajax({
 
         type: "GET",
@@ -36,7 +36,7 @@ $(document).ready(function(){
             console.log(error);
             alert(error);
         }
-    });*/
+    });
 
     $(".btn").click(function(){
 
